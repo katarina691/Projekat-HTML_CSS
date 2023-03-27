@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Kontakt</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="stil.css">
+
+	<script type="text/javascript">
+		function validacija() {
+
+	 		var ime = document.forms["kontakt"]["ime"].value;
+	 		var prezime = document.forms["kontakt"]["prezime"].value;
+	 		var poruka = document.forms["kontakt"]["poruka"].length;
+			if (ime == "") {
+				alert("Unesite ime");
+				return false;
+			} else if(prezime == "") {
+				alert("Unesite prezime");
+				return false;
+			} else if(poruka < 5) {
+				alert("Poruka ima manje od 5 karaktera");
+				return false;
+			} else if(poruka > 150) {
+				alert("Poruka je predugačka");
+			}
+		}
+	</script>
+</head>
+<body>
+	<div class="header clearfix">
+		<div class="logo">Dika</div>
+		<div class="navigacija">
+			<ul>
+				<li><a href="index.html">Početna</li></a>
+				<li><a href="o_kompaniji.html">O kompaniji</li></a>
+				<li><a href="proizvodi.html">Proizvodi</li></a>
+				<li><a href="o_nama.html">O nama</li></a>
+				<li><a href="karijere.html">Karijere</li></a>
+				<li><a href="kontakt.html">Kontakt</li></a>
+				<li><a href="blog.html">Blog</li></a>
+			</ul>
+		</div>
+	</div>
+
+		<h1>Kontakt</h1>
+
+		<form class="forma" name="kontakt" onsubmit="return validacija()">
+			<input type="text" class="form-control" placeholder="Unesite ime" name="ime">
+			<br>
+
+			<input type="text" class="form-control" placeholder="Unesite prezime" name="prezime">
+			<br>
+
+			<input type="text" class="form-control" placeholder="Unesite naslov" name="naslov">
+			<br>
+
+			<textarea type="textarea" class="form-control" placeholder="Poruka" name="poruka"></textarea>
+			<br>
+
+			<input type="text" class="form-control" placeholder="Broj telefona" name="brtelefona">
+			<br>
+
+		<button type="submit" class="btn btn-primary">Pošalji</button>
+	</form>
+		<footer>
+		Dika
+	</footer>
+</body>
+</html>

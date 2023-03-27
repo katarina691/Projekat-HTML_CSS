@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Proizvodi</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="stil.css">
+
+	<script type="text/javascript">
+		  function prikaziNovRed() {
+            var element = document.getElementById("novRed");
+             
+            if(element.style.visibility == "hidden"){
+                //element.style.display = "block";
+                element.style.visibility = "visible";
+            } else {
+                //element.style.display = "none";
+                element.style.visibility = "hidden";
+            }   
+        }
+	</script>
+</head>
+<body>
+	<div class="header clearfix">
+		<div class="logo">App City</div>
+		<div class="navigacija">
+			<ul>
+				<li><a href="index.html">Početna</li></a>
+				<li><a href="o_kompaniji.html">O kompaniji</li></a>
+				<li><a href="proizvodi.html">Proizvodi</li></a>
+				<li><a href="o_nama.html">O nama</li></a>
+				<li><a href="karijere.html">Karijere</li></a>
+				<li><a href="kontakt.html">Kontakt</li></a>
+				<li><a href="blog.html">Blog</li></a>
+			</ul>
+		</div>
+	</div>
+
+	<div>
+		<h2>Usluge</h2>
+
+		<img class="proizvodi-slika-windows" src="https://buildfire.com/wp-content/uploads/2017/11/what-type-of-apps-make-the-most-money-a-data-driven-answer-1200x675.jpg">
+		<h4 onmouseover="prikaziNovRed();" onmouseout="prikaziNovRed()">Profesionalna izrada mobilnih aplikacija</h4>
+		<p id="novRed" style="visibility:hidden;">U današnje vreme telefon je prestao da bude luksuz već potreba. Gotovo da nema osobe koja nema ne samo jedan već više</br> 
+		mobilnih telefona. Potrebna vam je mobilna aplikacija za realizaciju Vaše ideje? Hajde da Vašu ideju pretvorimo u realnost,
+		kreirajmo aplikaciju za mobilne telefone po Vašoj meri!</p>
+	</div>
+
+	
+	<footer>
+		App City
+	</footer>
+</body>
+</html>

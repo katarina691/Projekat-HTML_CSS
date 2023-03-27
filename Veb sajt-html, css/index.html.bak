@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pocetna</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="stil.css">
+</head>
+<body style="background-image: webAPP.jpg;">
+	<div class="header clearfix">
+		<div class="logo">App City</div>
+		<div class="navigacija">
+			<ul>
+				<li><a href="index.html">Početna</li></a>
+				<li><a href="o_kompaniji.html">O kompaniji</li></a>
+				<li><a href="proizvodi.html">Proizvodi</li></a>
+				<li><a href="o_nama.html">O nama</li></a>
+				<li><a href="karijere.html">Karijere</li></a>
+				<li><a href="kontakt.html">Kontakt</li></a>
+				<li><a href="blog.html">Blog</li></a>
+			</ul>
+		</div>
+	</div>
+
+	<div class="dobrodosli">
+		<h2>Dobrodošli na sajt App City!</h2>
+	</div>
+
+	<footer>
+		App City
+	</footer>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>O nama</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="stil.css">
+
+    <script type="text/javascript">
+        function promeniBoju(obj, colorName) {
+            obj.style.backgroundColor = colorName;
+        }
+         
+    </script>
+</head>
+<body>
+	<div class="header clearfix">
+		<div class="logo">Dika</div>
+		<div class="navigacija">
+			<ul>
+				<li><a href="index.html">Početna</li></a>
+				<li><a href="o_kompaniji.html">O kompaniji</li></a>
+				<li><a href="proizvodi.html">Proizvodi</li></a>
+				<li><a href="o_nama.html">O nama</li></a>
+				<li><a href="karijere.html">Karijere</li></a>
+				<li><a href="kontakt.html">Kontakt</li></a>
+				<li><a href="blog.html">Blog</li></a>
+			</ul>
+		</div>
+	</div>
+
+	<div class="o_nama">
+		<h1>Naš tim</h1>
+	</div>
+
+	<div class="clearfix">
+		<img class="o_nama-slike" src="https://www.lifevinefamily.com/bin/uploads/2016/12/woman.jpg">
+		<h3 onmouseover="promeniBoju(this, '#aed6f1')" onmouseout="promeniBoju(this, '#d7dbdd')">Anđela Bojić</h3>
+		<h6>Osnivač i direktor</h6>
+		<p>Rešavati probleme trgovaca je izazov za nas. Potvrda za dobro urađen posao jeste zadovoljstvo trgovaca i njihovih zaposlenih prilikom operativnog rada na našoj platformi. </p>
+	</div>
+	<div class="clearfix">
+		<img class="o_nama-slike" src="https://www.robotbutt.com/wp-content/uploads/2014/07/461777879.jpg">
+		<h3 onmouseover="promeniBoju(this, '#aed6f1')" onmouseout="promeniBoju(this, '#d7dbdd')">Marko Janjić</h3>
+		<h6>Back-end Team Lead</h6>
+		<p>Glavni fokus je dobra atmosfera u timu sa akcentom da se klijentu pruži najbolja usluga, a kupcima što jednostavnija kupovina. Trudimo se da pratimo svetske trendove, kako bi opravdali poverenje naših klijenata, kao i očekivanje kupaca koji koriste našu aplikaciju.</p>
+	</div>
+	<div class="clearfix">
+		<img class="o_nama-slike" src="https://cdn.newsapi.com.au/image/v1/b098661b2839da9b0ddf4a01e2d334ea?width=650">
+		<h3 onmouseover="promeniBoju(this, '#aed6f1')" onmouseout="promeniBoju(this, '#d7dbdd')">Marija</h3>
+		<p>Tekst o mariji</p>
+	</div>
+	<footer>
+		App City
+	</footer>
+
+</body>
+</html>

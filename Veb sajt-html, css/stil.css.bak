@@ -1,0 +1,78 @@
+body {
+	text-align: center;
+	background-color: #d7dbdd ;	
+}
+
+.logo {
+	font-size: 40px;
+	font-weight: bold;
+	float: left;
+	color: #3498db;	
+}
+
+.navigacija {
+	float: right;
+	padding-top: 20px;
+}
+
+.header, li {
+	display: inline-block;
+	margin-left: 10px;
+}
+
+.dobrodosli {
+	margin-top: 200px;
+}
+
+.dobrodosli {
+	color: #3498db ;
+}
+
+.o_kompaniji {
+	margin-top: 120px;
+}
+
+#novRed {
+	width: 100px;
+	text-align: center;
+}
+
+.proizvodi-slika {
+	width: 300px;
+}
+
+.proizvodi-slika-windows {
+	width: 200px;
+}
+
+.o_nama, h1 {
+	margin-top: 50px;
+	margin-bottom: 100px;
+}
+
+.o_nama-slike{
+	width: 400px;
+	margin-left: 30px;
+	margin-bottom: 20px;
+	float: left;
+	display: inline;
+}
+
+.forma {
+	padding: 80px;
+}
+
+h2 {
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+footer {
+	text-align: center;
+	background-color: #aed6f1;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+
+}

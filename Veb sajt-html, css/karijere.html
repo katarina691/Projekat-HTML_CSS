@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Karijere</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="stil.css">
+	<script type="text/javascript">
+		function validacija() {
+	 		var ime = document.forms["karijere"]["ime"].value;
+	 		var prezime = document.forms["karijere"]["prezime"].value;
+	 		var poruka = document.forms["karijere"]["poruka"].length;
+			if (ime == "") {
+				alert("Unesite ime");
+				return false;
+			} else if(prezime == "") {
+				alert("Unesite prezime");
+				return false;
+			} else if(poruka < 5) {
+				alert("Poruka ima manje od 5 karaktera");
+				return false;
+			} else if(poruka > 150) {
+				alert("Poruka je predugačka");
+			}
+		}
+	</script>
+</head>
+<body>
+	<div class="header clearfix">
+		<div class="logo">Dika</div>
+		<div class="navigacija">
+			<ul>
+				<li><a href="index.html">Početna</li></a>
+				<li><a href="o_kompaniji.html">O kompaniji</li></a>
+				<li><a href="proizvodi.html">Proizvodi</li></a>
+				<li><a href="o_nama.html">O nama</li></a>
+				<li><a href="karijere.html">Karijere</li></a>
+				<li><a href="kontakt.html">Kontakt</li></a>
+				<li><a href="blog.html">Blog</li></a>
+			</ul>
+		</div>
+	</div>
+
+	<h1>Karijere</h1>
+
+	<div align="center">
+		<h4>Tražimo iskusnog dizajnera za naše aplikacije</h4>
+		<p>U potrazi smo za dizajnerom koji ima barem 2 godine radnog iskustva <br>
+			Potrebno je da imate iskustva sa HTML5 i CSS3<br>
+			Osećajte se slobodno da pošaljete bilo kakvo pitanje.</p>
+	</div>
+
+	<form class="forma" name="karijere" onsubmit="return validacija()">
+			<label>Vaše Ime</label>
+			<input type="text" class="form-control" name="ime" placeholder="Unesite ime">
+
+			<label>Vaše Prezime</label>
+			<input type="text" class="form-control" name="prezime" placeholder="Unesite prezime">
+
+			<label>Poruka ili pitanje</label>
+			<textarea type="textarea" name="poruka" class="form-control"></textarea>
+
+			<label>CV</label>
+		    <input type="file" name="fajl" class="form-control-file">
+
+		<button type="submit" class="btn btn-primary">Pošalji</button>
+	</form>
+
+	<footer>
+		Dika
+	</footer>
+</body>
+</html>
